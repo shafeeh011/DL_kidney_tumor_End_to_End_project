@@ -1,7 +1,7 @@
 from src.dlproject import logger
 from src.dlproject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from src.dlproject.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
-from src.dlproject.pipeline.stage_03_modle_training import ModelTrainingTrainingPipeline
+from dlproject.pipeline.stage_03_model_training import ModelTrainingTrainingPipeline
 from src.dlproject.pipeline.stage_04_model_evaluation_mlflow import ModelEvaluationTrainingPipeline
 
 
