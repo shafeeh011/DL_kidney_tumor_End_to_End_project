@@ -70,10 +70,18 @@ class Training:
     
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
+        # Save to the original path
         model.save(path)
+        print(f"Model saved at: {path}")
 
-
-
+        # Save an additional copy in models/trained_model.h5
+        models_dir = Path("models")
+        models_dir.mkdir(exist_ok=True)  # Ensure 'models' directory exists
+        additional_save_path = models_dir / "trained_model.h5"
+        
+        model.save(additional_save_path)
+        print(f"Additional model saved at: {additional_save_path}")
+        
     
     def train(self):
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size

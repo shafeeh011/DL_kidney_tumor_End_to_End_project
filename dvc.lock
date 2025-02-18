@@ -98,8 +98,8 @@ stages:
       size: 563
     - path: src/dlproject/pipeline/stage_04_model_evaluation_mlflow.py
       hash: md5
-      md5: 720e1fc59e7b834e191cf49f35179a16
-      size: 905
+      md5: 8d6d4b5555e4f7ce7764497271bc6188
+      size: 904
     params:
       params.yaml:
         BATCH_SIZE: 16
